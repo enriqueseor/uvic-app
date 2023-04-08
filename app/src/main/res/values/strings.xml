@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">uvic-app</string>
+    <string name="app_name">TUI - UVIC</string>
     <string name="events">Events</string>
     <string name="card">Card</string>
     <string name="statements">Statements</string>
     <string name="launcher">Launcher</string>
     <string name="bbva">Bbva</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
