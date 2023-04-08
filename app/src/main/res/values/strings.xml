@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">uvic-app</string>
+    <string name="events">Events</string>
+    <string name="card">Card</string>
+    <string name="statements">Statements</string>
+    <string name="launcher">Launcher</string>
+    <string name="bbva">Bbva</string>
+</resources>

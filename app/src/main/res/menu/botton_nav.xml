@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/events"
+        android:icon="@drawable/ic_baseline_events_24" />
+
+    <item android:title="@string/card"
+        android:icon="@drawable/ic_baseline_card_24" />
+
+    <item android:title="@string/statements"
+        android:icon="@drawable/ic_baseline_statements_24" />
+
+    <item android:title="@string/launcher"
+        android:icon="@drawable/ic_baseline_launcher_24" />
+
+    <item android:title="@string/bbva"
+        android:icon="@drawable/ic_baseline_bbva_24" />
+
+</menu>
