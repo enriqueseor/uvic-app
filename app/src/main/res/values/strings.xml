@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">TUI - UVIC</string>
+
     <string name="events">Events</string>
     <string name="card">Card</string>
     <string name="statements">Statements</string>
@@ -7,10 +8,13 @@
     <string name="bbva">Bbva</string>
 
     <string name="aluImage">aluImage</string>
-    <string name="alusurname">Seco Orriols</string>
     <string name="aluname">Enrique</string>
+    <string name="alusurname">Seco Orriols</string>
+
     <string name="niuv">NIUV: </string>
-    <string name="group">GROUP: </string>
     <string name="aluNum">10022072</string>
+    <string name="linea1">_______________________________________________________</string>
+    <string name="group">GROUP: </string>
     <string name="groupType">Student</string>
+    <string name="linea2">_______________________________________________________</string>
 </resources>

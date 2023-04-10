@@ -22,7 +22,7 @@ class LauncherFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             LauncherFragment().apply {
                 arguments = Bundle().apply {}
             }

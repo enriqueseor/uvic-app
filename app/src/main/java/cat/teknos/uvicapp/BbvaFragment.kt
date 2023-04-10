@@ -8,7 +8,6 @@ import android.view.ViewGroup
 
 class BbvaFragment : Fragment() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {}
@@ -23,7 +22,7 @@ class BbvaFragment : Fragment() {
 
     companion object {
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance() =
             BbvaFragment().apply {
                 arguments = Bundle().apply {}
             }
