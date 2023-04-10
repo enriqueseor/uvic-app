@@ -11,7 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:contentDescription="@string/aluImage"
-        android:background="@color/black"
+        android:src="@drawable/img_20210513_102838"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintVertical_bias="0.1"
         app:layout_constraintTop_toTopOf="parent"

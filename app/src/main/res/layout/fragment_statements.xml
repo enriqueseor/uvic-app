@@ -5,4 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".StatementsFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_statements"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
 </FrameLayout>

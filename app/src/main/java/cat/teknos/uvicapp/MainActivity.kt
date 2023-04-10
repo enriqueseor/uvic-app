@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        replaceFragment(CardFragment())
+        replaceFragment(EventsFragment())
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
         bottomNavigationView.setOnItemSelectedListener {
