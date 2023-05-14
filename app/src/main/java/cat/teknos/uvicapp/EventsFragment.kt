@@ -19,12 +19,4 @@ class EventsFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_events, container, false)
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            EventsFragment().apply {
-                arguments = Bundle().apply {}
-            }
-    }
 }

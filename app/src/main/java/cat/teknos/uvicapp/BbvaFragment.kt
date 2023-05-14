@@ -19,12 +19,4 @@ class BbvaFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_bbva, container, false)
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            BbvaFragment().apply {
-                arguments = Bundle().apply {}
-            }
-    }
 }

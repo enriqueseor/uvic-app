@@ -19,12 +19,4 @@ class LauncherFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_launcher, container, false)
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            LauncherFragment().apply {
-                arguments = Bundle().apply {}
-            }
-    }
 }

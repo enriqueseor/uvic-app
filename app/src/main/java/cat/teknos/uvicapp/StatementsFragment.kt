@@ -19,12 +19,4 @@ class StatementsFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_statements, container, false)
     }
-
-    companion object {
-        @JvmStatic
-        fun newInstance() =
-            StatementsFragment().apply {
-                arguments = Bundle().apply {}
-            }
-    }
 }
