@@ -22,7 +22,7 @@
             android:id="@+id/roundedImageView"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:src="@drawable/img_20210513_102838"
+            android:src="@drawable/enrique_seco_orriols"
             android:background="@color/white"
             android:scaleType="centerCrop"
             tools:ignore="ContentDescription" />
