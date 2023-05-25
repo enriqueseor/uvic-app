@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TUI - UVIC</string>
+    <string name="app_name">TUI UVic-UCC</string>
 
     <string name="events">Events</string>
     <string name="card">Card</string>
