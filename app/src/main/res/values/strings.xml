@@ -12,8 +12,7 @@
 
     <string name="niuv">NIUV: </string>
     <string name="aluNum">10022072</string>
-    <string name="linea1">_______________________________________________________</string>
+    <string name="linea">_________________________________________________________</string>
     <string name="group">GROUP: </string>
     <string name="groupType">Student</string>
-    <string name="linea2">_______________________________________________________</string>
 </resources>
