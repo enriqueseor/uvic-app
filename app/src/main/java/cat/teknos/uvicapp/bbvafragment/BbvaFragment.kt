@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.Fragment
+package cat.teknos.uvicapp.bbvafragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import cat.teknos.uvicapp.R
 
-class LauncherFragment : Fragment() {
+class BbvaFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,6 @@ class LauncherFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_launcher, container, false)
+        return inflater.inflate(R.layout.fragment_bbva, container, false)
     }
 }

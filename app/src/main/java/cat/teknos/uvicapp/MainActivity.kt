@@ -3,11 +3,11 @@ package cat.teknos.uvicapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import cat.teknos.uvicapp.Fragment.BbvaFragment
-import cat.teknos.uvicapp.Fragment.CardFragment
-import cat.teknos.uvicapp.Fragment.EventsFragment
-import cat.teknos.uvicapp.Fragment.LauncherFragment
-import cat.teknos.uvicapp.Fragment.StatementsFragment
+import cat.teknos.uvicapp.eventsfragment.EventsFragment
+import cat.teknos.uvicapp.bbvafragment.BbvaFragment
+import cat.teknos.uvicapp.cardfragment.CardFragment
+import cat.teknos.uvicapp.launcherfragment.LauncherFragment
+import cat.teknos.uvicapp.statementsfragment.StatementsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
