@@ -1,7 +1,10 @@
 package cat.teknos.uvicapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import cat.teknos.uvicapp.eventsfragment.EventsFragment
 import cat.teknos.uvicapp.bbvafragment.BbvaFragment
@@ -37,4 +40,20 @@ class MainActivity : AppCompatActivity() {
             commit()
         }
 
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_overflow, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_preferences -> {
+                val intent = Intent(this, SettingsActivity::class.java)
+                startActivity(intent)
+                return true
+            }
+            else -> return super.onOptionsItemSelected(item)
+        }
+    }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="vermell_uvic_500">#CB132D</color>
-    <color name="vermell_uvic_700">#DA222C</color>
+    <color name="vermell_uvic_500">#DA222C</color>
+    <color name="vermell_uvic_700">#B23531</color>
 
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
+    <color name="teal_200">#0101FF</color>
+    <color name="teal_700">#0101FF</color>
 
     <color name="grey">#808080</color>
     <color name="black">#FF000000</color>
