@@ -9,28 +9,30 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp">
+        android:layout_height="122dp">
 
         <TextView
             android:id="@+id/tvEventDay"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:textSize="100sp"
-            android:textAlignment="center"
-            android:background="@drawable/border_bold"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="80sp"
+            android:gravity="center"
+            android:textColor="@color/vermell_uvic_500"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0"
             app:layout_constraintVertical_bias="0"
-            tools:text="2" />
+            tools:text="3" />
 
         <TextView
             android:id="@+id/tvEventMonth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="15sp"
+            android:textColor="@color/vermell_uvic_500"
+
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,19 +42,30 @@
             tools:text="June" />
 
         <TextView
+            android:layout_width="2dp"
+            android:layout_height="100dp"
+            android:background="@color/grey"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tvEventName"
+            app:layout_constraintStart_toEndOf="@+id/tvEventDay"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/tvEventName"
-            android:layout_width="wrap_content"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="21sp"
+            android:textColor="@color/grey"
+            android:textSize="15sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/tvEventDay"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.2"
-            tools:text="Event name" />
+            tools:text="Concert de Gemma Humet - el so de les cases" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
