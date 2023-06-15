@@ -9,14 +9,13 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import cat.teknos.uvicapp.databinding.FragmentEventsBinding
 import cat.teknos.uvicapp.eventsfragment.adapter.EventAdapter
-import cat.teknos.uvicapp.eventsfragment.event.Event
 import cat.teknos.uvicapp.eventsfragment.event.EventProvider
 
 class EventsFragment : Fragment() {
 
     private lateinit var binding: FragmentEventsBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         binding = FragmentEventsBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -31,10 +30,10 @@ class EventsFragment : Fragment() {
         val decoration = DividerItemDecoration(requireContext(), manager.orientation)
         binding.rvEvents.layoutManager = manager
         binding.rvEvents.adapter = EventAdapter(EventProvider.eventList) {
-                event -> onItemSelected(event)
+        onItemSelected()
         }
         binding.rvEvents.addItemDecoration(decoration)
     }
 
-    private fun onItemSelected(event: Event) {}
+    private fun onItemSelected() {}
 }

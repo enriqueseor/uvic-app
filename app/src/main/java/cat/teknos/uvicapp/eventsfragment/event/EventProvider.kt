@@ -37,5 +37,55 @@ object EventProvider {
             "June",
             "IV Congrès de l'Acció Social - Inclusió.cat"
         ),
+        Event(
+            "15",
+            "June",
+            "Actes de lliurament de diplomes del grau dels graus de la Facultat de Ciències de la Salut i el Benestar"
+        ),
+        Event(
+            "15",
+            "June",
+            "Actes de lliurament de diplomes del grau en Mestres d'Educació Infantil"
+        ),
+        Event(
+            "15",
+            "June",
+            "Actes de lliurament de diplomes del grau en Mestres d'Educació Primària"
+        ),
+        Event(
+            "16",
+            "June",
+            "VII Jornada d'Atenció a les Ferides"
+        ),
+        Event(
+            "16",
+            "June",
+            "Ignaguració de l'escultura de Josep Vernis"
+        ),
+        Event(
+            "16",
+            "June",
+            "Seminari: Patrimoni, paisatges i educació: recursos didàctics per a l'escola"
+        ),
+        Event(
+            "16",
+            "June",
+            "Actes de lliurament de diplomes dels graus de la Facultat d'empresa i Comunicació"
+        ),
+        Event(
+            "16",
+            "June",
+            "Taula rodona sobre l'actualitat del pensament de Rosa Sensat"
+        ),
+        Event(
+            "17",
+            "June",
+            "Sortides naturalistes: Les papallones"
+        ),
+        Event(
+            "17",
+            "June",
+            "Sortides naturalistes: Les papallones nocturnes"
+        )
     )
 }

@@ -1,20 +1,23 @@
 <resources>
     <string name="app_name">TUI UVic-UCC</string>
 
+    <!-- Bottom Navigation Bar -->
     <string name="events">Events</string>
     <string name="card">Card</string>
     <string name="statements">Statements</string>
     <string name="launcher">Launcher</string>
     <string name="bbva">Bbva</string>
 
+    <!-- Card Activity -->
     <string name="aluname">Enrique</string>
     <string name="alusurname">Seco Orriols</string>
-
     <string name="niuv">NIUV: </string>
     <string name="aluNum">10022072</string>
-    <string name="linea">_________________________________________________________</string>
     <string name="group">GROUP: </string>
     <string name="groupType">Student</string>
+    <string name="timer">15.06.2023 – 17:50:00</string>
+
+    <!-- Setting Activity -->
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
@@ -28,8 +31,7 @@
     <!-- Sync Preferences -->
     <string name="sync_title">Sync email periodically</string>
     <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="preferences">Preferences</string>
 </resources>
