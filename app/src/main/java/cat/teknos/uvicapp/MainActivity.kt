@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
         replaceFragment(EventsFragment())
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
 
+        val statusBarName = getString(R.string.status_bar)
+        title = statusBarName
+
+
         bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.events -> replaceFragment(EventsFragment())
