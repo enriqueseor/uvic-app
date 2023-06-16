@@ -6,11 +6,13 @@ import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import cat.teknos.uvicapp.R
 
 class BbvaFragment : Fragment() {
+
+    private var statusBarColor: Int = 0
+    private var navigationBarColor: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,21 +23,36 @@ class BbvaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        val primaryColor = ContextCompat.getColor(requireContext(), R.color.teal_200)
-        val secondaryColor = ContextCompat.getColor(requireContext(), R.color.teal_200)
-
         val themeResId = R.style.Theme_Uvicapp
         val contextThemeWrapper = ContextThemeWrapper(requireActivity(), themeResId)
         val theme = contextThemeWrapper.theme
         val typedValue = TypedValue()
 
-        theme.resolveAttribute(com.google.android.material.R.attr.colorPrimary, typedValue, true)
-        typedValue.data = primaryColor
-        theme.resolveAttribute(com.google.android.material.R.attr.colorPrimaryVariant, typedValue, true)
-        typedValue.data = secondaryColor
+        theme.resolveAttribute(com.google.android.material.R.attr.colorSecondary, typedValue, true)
+        val primaryVariantColor = typedValue.data
+
+        theme.resolveAttribute(com.google.android.material.R.attr.colorSecondaryVariant, typedValue, true)
+        val secondaryVariantColor = typedValue.data
+
+        // Set the navigation bar color
+        statusBarColor = requireActivity().window.navigationBarColor
+        requireActivity().window.navigationBarColor = primaryVariantColor
+
+        // Set the status bar color
+        navigationBarColor = requireActivity().window.statusBarColor
+        requireActivity().window.statusBarColor = secondaryVariantColor
 
         // Apply the updated theme
         val themedInflater = inflater.cloneInContext(contextThemeWrapper)
         return themedInflater.inflate(R.layout.fragment_bbva, container, false)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+
+        // Reset the navigation bar color
+        requireActivity().window.navigationBarColor = navigationBarColor
+        // Reset the status bar color
+        requireActivity().window.statusBarColor = statusBarColor
     }
 }

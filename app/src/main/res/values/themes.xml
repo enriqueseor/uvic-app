@@ -6,11 +6,14 @@
         <item name="colorPrimaryVariant">@color/vermell_uvic_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">@color/bbva_blau_200</item>
+        <item name="colorSecondaryVariant">@color/bbva_blau_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>ç
+        <!-- Navigation bar color. -->
+        <item name="android:windowActionBar">?attr/colorPrimary</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
