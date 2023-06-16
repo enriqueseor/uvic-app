@@ -12,6 +12,7 @@ import cat.teknos.uvicapp.R
 class BbvaFragment : Fragment() {
 
     private var statusBarColor: Int = 0
+    private var colorChanged: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,9 +31,12 @@ class BbvaFragment : Fragment() {
         theme.resolveAttribute(com.google.android.material.R.attr.colorSecondaryVariant, typedValue, true)
         val secondaryVariantColor = typedValue.data
 
-        // Set the status bar color
-        statusBarColor = requireActivity().window.statusBarColor
-        requireActivity().window.statusBarColor = secondaryVariantColor
+        if (!colorChanged) {
+            // Set the status bar color
+            statusBarColor = requireActivity().window.statusBarColor
+            requireActivity().window.statusBarColor = secondaryVariantColor
+            colorChanged = true
+        }
 
         // Apply the updated theme
         val themedInflater = inflater.cloneInContext(contextThemeWrapper)
@@ -43,6 +47,10 @@ class BbvaFragment : Fragment() {
         super.onDestroyView()
 
         // Reset the status bar color
-        requireActivity().window.statusBarColor = statusBarColor
+        if (colorChanged) {
+            // Reset the status bar color
+            requireActivity().window.statusBarColor = statusBarColor
+            colorChanged = false
+        }
     }
 }
