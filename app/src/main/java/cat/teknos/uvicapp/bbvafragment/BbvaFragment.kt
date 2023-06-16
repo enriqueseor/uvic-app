@@ -12,7 +12,6 @@ import cat.teknos.uvicapp.R
 class BbvaFragment : Fragment() {
 
     private var statusBarColor: Int = 0
-    private var navigationBarColor: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,18 +27,11 @@ class BbvaFragment : Fragment() {
         val theme = contextThemeWrapper.theme
         val typedValue = TypedValue()
 
-        theme.resolveAttribute(com.google.android.material.R.attr.colorSecondary, typedValue, true)
-        val primaryVariantColor = typedValue.data
-
         theme.resolveAttribute(com.google.android.material.R.attr.colorSecondaryVariant, typedValue, true)
         val secondaryVariantColor = typedValue.data
 
-        // Set the navigation bar color
-        statusBarColor = requireActivity().window.navigationBarColor
-        requireActivity().window.navigationBarColor = primaryVariantColor
-
         // Set the status bar color
-        navigationBarColor = requireActivity().window.statusBarColor
+        statusBarColor = requireActivity().window.statusBarColor
         requireActivity().window.statusBarColor = secondaryVariantColor
 
         // Apply the updated theme
@@ -50,8 +42,6 @@ class BbvaFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
 
-        // Reset the navigation bar color
-        requireActivity().window.navigationBarColor = navigationBarColor
         // Reset the status bar color
         requireActivity().window.statusBarColor = statusBarColor
     }
