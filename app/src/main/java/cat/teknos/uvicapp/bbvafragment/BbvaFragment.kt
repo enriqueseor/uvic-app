@@ -44,9 +44,18 @@ class BbvaFragment : Fragment() {
         super.onPause()
 
         if (colorChanged) {
+            val themeResId = R.style.Theme_Uvicapp
+            val contextThemeWrapper = ContextThemeWrapper(requireActivity(), themeResId)
+            val theme = contextThemeWrapper.theme
+            val typedValue = TypedValue()
+
+            theme.resolveAttribute(com.google.android.material.R.attr.colorPrimary, typedValue, true)
+            val primaryColor = typedValue.data
+
             val actionBar = (requireActivity() as AppCompatActivity).supportActionBar
-            actionBar?.setBackgroundDrawable(ColorDrawable(com.google.android.material.R.attr.colorPrimary))
+            actionBar?.setBackgroundDrawable(ColorDrawable(primaryColor))
             requireActivity().window.statusBarColor = statusBarColor
+
             colorChanged = false
         }
     }
