@@ -9,11 +9,17 @@
         <item name="colorSecondary">@color/bbva_blau_200</item>
         <item name="colorSecondaryVariant">@color/bbva_blau_700</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Navigation bar color. -->
+
+        <!-- Action bar color. -->
         <item name="android:windowActionBar">?attr/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/white</item>
+
+        <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
         <!-- Navigation bar color. -->
         <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
+
         <!-- Customize your theme here. -->
     </style>
 </resources>
