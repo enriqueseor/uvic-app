@@ -86,6 +86,31 @@ object EventProvider {
             "17",
             "June",
             "Sortides naturalistes: Les papallones nocturnes"
+        ),
+        Event(
+            "20",
+            "June",
+            "I Jornada de la Taula de Salut Mental i Addiccions d'Osona"
+        ),
+        Event(
+            "20",
+            "June",
+            "Presentació de llibre 'Tiempos de confusión' de Josep Burgaya"
+        ),
+        Event(
+            "21",
+            "June",
+            "XXVI Premis UVic als millors treballs de recerca de batxillerat"
+        ),
+        Event(
+            "22",
+            "June",
+            "Actes de lliurament de diplomes de grau de Psicologia"
+        ),
+        Event(
+            "26",
+            "June",
+            "XVII Congrés Internacional de la Societat Espanyola de Biofísica"
         )
     )
 }
