@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,8 +10,66 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bg_launcher"
         android:scaleType="centerCrop"
-        tools:ignore="ContentDescription" />
+        android:src="@drawable/bg_launcher"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="39dp" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/uAcademic"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <Button
+        android:id="@+id/comparteixCotxe"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/microsoftTeams"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/Moodle"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
