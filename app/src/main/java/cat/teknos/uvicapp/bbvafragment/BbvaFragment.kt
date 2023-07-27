@@ -1,6 +1,5 @@
 package cat.teknos.uvicapp.bbvafragment
 
-import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.util.TypedValue
@@ -8,14 +7,15 @@ import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
+import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import cat.teknos.uvicapp.R
-import cat.teknos.uvicapp.WebActivity
 
 class BbvaFragment : Fragment() {
 
+    private var webView: WebView? = null
     private var statusBarColor: Int = 0
     private var colorChanged: Boolean = false
 
@@ -69,35 +69,18 @@ class BbvaFragment : Fragment() {
         val themedInflater = inflater.cloneInContext(requireActivity())
         val view = themedInflater.inflate(R.layout.fragment_bbva, container, false)
 
-        // Get references to the image views
-        val imageTopLeft = view.findViewById<ImageView>(R.id.imageTopLeft)
-        val imageTopRight = view.findViewById<ImageView>(R.id.imageTopRight)
-        val imageBottomLeft = view.findViewById<ImageView>(R.id.imageBottomLeft)
-        val imageBottomRight = view.findViewById<ImageView>(R.id.imageBottomRight)
-
-        // Set click listeners for the image views
-        imageTopLeft.setOnClickListener {
-            openWebActivity("https://www.bbva.es/personas/jovenes.html")
-        }
-
-        imageTopRight.setOnClickListener {
-            openWebActivity("https://www.bbva.es/personas/apps/bbva-espana.html")
-        }
-
-        imageBottomLeft.setOnClickListener {
-            openWebActivity("https://aprendemosjuntos.bbva.com/")
-        }
-
-        imageBottomRight.setOnClickListener {
-            openWebActivity("https://www.bbva.es/finanzas-vistazo/ef.html")
-        }
+        webView = view.findViewById(R.id.webView)
+        webView?.settings?.javaScriptEnabled = true
+        webView?.webViewClient = WebViewClient()
+        val url = "https://www.bbva.es/en/personas/productos/cuentas/cuenta-online-sin-comisiones.html"
+        webView?.loadUrl(url)
 
         return view
     }
 
-    private fun openWebActivity(url: String) {
-        val intent = Intent(requireContext(), WebActivity::class.java)
-        intent.putExtra(WebActivity.EXTRA_URL, url)
-        startActivity(intent)
+    override fun onDestroyView() {
+        super.onDestroyView()
+        webView?.parent?.let { (it as ViewGroup).removeView(webView) }
+        webView?.destroy()
     }
 }

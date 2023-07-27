@@ -1,95 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bbva_blau_700"
     android:orientation="vertical">
 
-    <!-- Top Row -->
-    <LinearLayout
+    <WebView
+        android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:baselineAligned="false">
-
-        <!-- Top Left Image -->
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/imageTopLeft"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="4dp"
-                android:src="@drawable/bg_bbva_top_left"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription" />
-
-        </FrameLayout>
-
-        <!-- Top Right Image -->
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/imageTopRight"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="4dp"
-                android:src="@drawable/bg_bbva_top_right"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription" />
-
-        </FrameLayout>
-
-    </LinearLayout>
-
-    <!-- Bottom Row -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:baselineAligned="false">
-
-        <!-- Bottom Left Image -->
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/imageBottomLeft"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="4dp"
-                android:src="@drawable/bg_bbva_bottom_left"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription" />
-
-        </FrameLayout>
-
-        <!-- Bottom Right Image -->
-        <FrameLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <ImageView
-                android:id="@+id/imageBottomRight"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="4dp"
-                android:src="@drawable/bg_bbva_bottom_right"
-                android:scaleType="fitXY"
-                tools:ignore="ContentDescription" />
-
-        </FrameLayout>
-
-    </LinearLayout>
+        android:layout_height="match_parent" />
 
 </LinearLayout>
