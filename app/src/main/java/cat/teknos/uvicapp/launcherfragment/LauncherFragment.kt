@@ -24,14 +24,20 @@ class LauncherFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_launcher, container, false)
 
+        setupAppButtons(view)
+
+        return view
+    }
+
+    private fun setupAppButtons(view: View) {
         val uAcademicButton: Button = view.findViewById(R.id.uAcademic)
         uAcademicButton.setOnClickListener {
-            openAppInPlayStore("com.example.comparteixcotxe")
+            openAppInPlayStore("com.sigma.mobile.target.uvic")
         }
 
         val feseditButton: Button = view.findViewById(R.id.fesedit)
         feseditButton.setOnClickListener {
-            openAppInPlayStore("com.example.comparteixcotxe")
+            openAppInPlayStore("cat.easy.fesedit")
         }
 
         val microsoftTeamsButton: Button = view.findViewById(R.id.microsoftTeams)
@@ -41,10 +47,8 @@ class LauncherFragment : Fragment() {
 
         val moodleButton: Button = view.findViewById(R.id.Moodle)
         moodleButton.setOnClickListener {
-            openAppInPlayStore("com.moodle")
+            openAppInPlayStore("com.moodle.moodlemobile")
         }
-
-        return view
     }
 
     private fun openAppInPlayStore(packageName: String) {
