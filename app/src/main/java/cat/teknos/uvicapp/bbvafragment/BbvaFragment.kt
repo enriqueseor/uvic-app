@@ -1,79 +1,31 @@
 package cat.teknos.uvicapp.bbvafragment
 
-import android.graphics.drawable.ColorDrawable
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.util.TypedValue
-import android.view.ContextThemeWrapper
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import cat.teknos.uvicapp.R
 
 class BbvaFragment : Fragment() {
 
     private var webView: WebView? = null
-    private var statusBarColor: Int = 0
-    private var colorChanged: Boolean = false
 
-    override fun onResume() {
-        super.onResume()
-
-        if (!colorChanged) {
-            val themeResId = R.style.Theme_Uvicapp
-            val contextThemeWrapper = ContextThemeWrapper(requireActivity(), themeResId)
-            val theme = contextThemeWrapper.theme
-            val typedValue = TypedValue()
-
-            theme.resolveAttribute(com.google.android.material.R.attr.colorSecondary, typedValue, true)
-            val secondaryColor = typedValue.data
-            val actionBar = (requireActivity() as AppCompatActivity).supportActionBar
-            actionBar?.setBackgroundDrawable(ColorDrawable(secondaryColor))
-
-            theme.resolveAttribute(com.google.android.material.R.attr.colorSecondaryVariant, typedValue, true)
-            val secondaryVariantColor = typedValue.data
-            statusBarColor = requireActivity().window.statusBarColor
-            requireActivity().window.statusBarColor = secondaryVariantColor
-
-            colorChanged = true
-        }
-    }
-
-    override fun onPause() {
-        super.onPause()
-
-        if (colorChanged) {
-            val themeResId = R.style.Theme_Uvicapp
-            val contextThemeWrapper = ContextThemeWrapper(requireActivity(), themeResId)
-            val theme = contextThemeWrapper.theme
-            val typedValue = TypedValue()
-
-            theme.resolveAttribute(com.google.android.material.R.attr.colorPrimary, typedValue, true)
-            val primaryColor = typedValue.data
-
-            val actionBar = (requireActivity() as AppCompatActivity).supportActionBar
-            actionBar?.setBackgroundDrawable(ColorDrawable(primaryColor))
-            requireActivity().window.statusBarColor = statusBarColor
-
-            colorChanged = false
-        }
-    }
-
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val themedInflater = inflater.cloneInContext(requireActivity())
-        val view = themedInflater.inflate(R.layout.fragment_bbva, container, false)
+        requireActivity().setTheme(R.style.BbvaTheme)
+        val view = inflater.inflate(R.layout.fragment_bbva, container, false)
 
         webView = view.findViewById(R.id.webView)
         webView?.settings?.javaScriptEnabled = true
         webView?.webViewClient = WebViewClient()
-        val url = "https://www.bbva.es/en/personas/productos/cuentas/cuenta-online-sin-comisiones.html"
-        webView?.loadUrl(url)
+        webView?.loadUrl("https://www.bbva.es/en/personas/productos/cuentas/cuenta-online-sin-comisiones.html")
 
         return view
     }

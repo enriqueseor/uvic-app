@@ -1,31 +1,19 @@
 <resources>
-    <!-- Base application theme. -->
     <style name="Theme.Uvicapp" parent="Theme.MaterialComponents.Light">
-        <!-- Primary brand color. -->
         <item name="colorPrimary">@color/vermell_uvic_500</item>
         <item name="colorPrimaryVariant">@color/vermell_uvic_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/bbva_blau_200</item>
-        <item name="colorSecondaryVariant">@color/bbva_blau_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-
-        <!-- Action bar color. -->
-        <item name="android:windowActionBar">?attr/colorPrimary</item>
         <item name="android:textColorPrimary">@color/white</item>
-
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-
-        <!-- Navigation bar color. -->
-        <item name="android:navigationBarColor">?attr/colorOnPrimary</item>
-
-        <!-- Customize your theme here. -->
     </style>
 
     <style name="SplashTheme" parent="Theme.Uvicapp">
         <item name="android:windowBackground">
             @drawable/splashscreen
         </item>
+    </style>
+
+    <style name="BbvaTheme" parent="Theme.Uvicapp">
+        <item name="colorPrimary">@color/bbva_blau_200</item>
+        <item name="colorPrimaryVariant">@color/bbva_blau_700</item>
+        <item name="android:textColorPrimary">@color/white</item>
     </style>
 </resources>

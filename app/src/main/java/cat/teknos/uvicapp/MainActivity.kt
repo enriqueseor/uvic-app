@@ -17,16 +17,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setTheme(R.style.SplashTheme)
+        setTheme(R.style.Theme_Uvicapp)
         setContentView(R.layout.activity_main)
 
         replaceFragment(EventsFragment())
         val bottomNavigationView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
-
-        val statusBarName = getString(R.string.status_bar)
-        title = statusBarName
-
-
         bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId){
                 R.id.events -> replaceFragment(EventsFragment())
@@ -58,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 true
             }
-
             else -> super.onOptionsItemSelected(item)
         }
     }
