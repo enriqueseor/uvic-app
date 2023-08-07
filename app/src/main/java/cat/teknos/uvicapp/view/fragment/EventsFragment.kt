@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.eventsfragment
+package cat.teknos.uvicapp.view.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import cat.teknos.uvicapp.databinding.FragmentEventsBinding
-import cat.teknos.uvicapp.eventsfragment.adapter.EventAdapter
-import cat.teknos.uvicapp.eventsfragment.event.EventProvider
+import cat.teknos.uvicapp.view.adapter.EventAdapter
+import cat.teknos.uvicapp.data.EventProvider
 
 class EventsFragment : Fragment() {
 

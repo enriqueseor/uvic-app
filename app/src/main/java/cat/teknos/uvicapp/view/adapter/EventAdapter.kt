@@ -1,12 +1,12 @@
-package cat.teknos.uvicapp.eventsfragment.adapter
+package cat.teknos.uvicapp.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import cat.teknos.uvicapp.R
-import cat.teknos.uvicapp.eventsfragment.event.Event
+import cat.teknos.uvicapp.data.model.EventModel
 
-class EventAdapter(private val eventList:List<Event>, private val onClickListener:(Event) -> Unit) : RecyclerView.Adapter<EventViewHolder>() {
+class EventAdapter(private val eventList:List<EventModel>, private val onClickListener:(EventModel) -> Unit) : RecyclerView.Adapter<EventViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)

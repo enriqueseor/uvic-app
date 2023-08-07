@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.launcherfragment
+package cat.teknos.uvicapp.view.fragment
 
 import android.content.ActivityNotFoundException
 import android.content.Intent

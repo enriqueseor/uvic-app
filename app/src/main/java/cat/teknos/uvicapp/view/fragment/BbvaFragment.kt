@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.bbvafragment
+package cat.teknos.uvicapp.view.fragment
 
 import android.annotation.SuppressLint
 import android.os.Bundle

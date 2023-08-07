@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.cardfragment
+package cat.teknos.uvicapp.view.fragment
 
 import android.os.Bundle
 import android.os.Handler

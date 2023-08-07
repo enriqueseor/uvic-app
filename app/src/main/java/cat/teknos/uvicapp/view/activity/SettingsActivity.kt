@@ -1,8 +1,9 @@
-package cat.teknos.uvicapp
+package cat.teknos.uvicapp.view.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
+import cat.teknos.uvicapp.R
 
 class SettingsActivity : AppCompatActivity() {
 

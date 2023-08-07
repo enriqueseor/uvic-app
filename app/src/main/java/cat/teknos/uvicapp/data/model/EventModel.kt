@@ -1,6 +1,6 @@
-package cat.teknos.uvicapp.eventsfragment.event
+package cat.teknos.uvicapp.data.model
 
-data class Event (
+data class EventModel (
     val day: String,
     val month: String,
     val eventName: String
