@@ -19,7 +19,6 @@ class BbvaFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        requireActivity().setTheme(R.style.BbvaTheme)
         val view = inflater.inflate(R.layout.fragment_bbva, container, false)
 
         webView = view.findViewById(R.id.webView)
