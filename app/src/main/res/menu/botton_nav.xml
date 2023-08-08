@@ -9,8 +9,8 @@
         android:id="@+id/card"
         android:icon="@drawable/ic_baseline_card_24" />
 
-    <item android:title="@string/statements"
-        android:id="@+id/statements"
+    <item android:title="@string/timetable"
+        android:id="@+id/timetable"
         android:icon="@drawable/ic_baseline_statements_24" />
 
     <item android:title="@string/launcher"

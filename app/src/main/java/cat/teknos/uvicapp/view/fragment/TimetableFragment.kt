@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import cat.teknos.uvicapp.R
 
-class StatementsFragment : Fragment() {
+class TimetableFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +18,6 @@ class StatementsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_statements, container, false)
+        return inflater.inflate(R.layout.fragment_timetable, container, false)
     }
 }

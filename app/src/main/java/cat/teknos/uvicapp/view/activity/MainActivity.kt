@@ -11,7 +11,7 @@ import cat.teknos.uvicapp.view.fragment.EventsFragment
 import cat.teknos.uvicapp.view.fragment.BbvaFragment
 import cat.teknos.uvicapp.view.fragment.CardFragment
 import cat.teknos.uvicapp.view.fragment.LauncherFragment
-import cat.teknos.uvicapp.view.fragment.StatementsFragment
+import cat.teknos.uvicapp.view.fragment.TimetableFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId){
                 R.id.events -> replaceFragment(EventsFragment())
                 R.id.card -> replaceFragment(CardFragment())
-                R.id.statements -> replaceFragment(StatementsFragment())
+                R.id.timetable -> replaceFragment(TimetableFragment())
                 R.id.launcher -> replaceFragment(LauncherFragment())
                 R.id.bbva -> replaceFragment(BbvaFragment())
             }

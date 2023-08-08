@@ -5,7 +5,7 @@
     <!-- Bottom Navigation Bar -->
     <string name="events">Events</string>
     <string name="card">Card</string>
-    <string name="statements">Statements</string>
+    <string name="timetable">Timetable</string>
     <string name="launcher">Launcher</string>
     <string name="bbva">Bbva</string>
 
