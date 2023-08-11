@@ -2,6 +2,9 @@
     <string name="app_name">TUI UVic-UCC</string>
     <string name="status_bar">UVIC - UCC</string>
 
+    <!-- Main Activity -->
+    <string name="title_activity_main">UVic-UCC</string>
+
     <!-- Bottom Navigation Bar -->
     <string name="events">Events</string>
     <string name="card">Card</string>
@@ -9,7 +12,7 @@
     <string name="launcher">Launcher</string>
     <string name="bbva">Bbva</string>
 
-    <!-- Card Activity -->
+    <!-- Card Fragment -->
     <string name="aluname">Enrique</string>
     <string name="alusurname">Seco Orriols</string>
     <string name="niuv">NIUV: </string>
@@ -22,7 +25,7 @@
     <string name="title_activity_settings">SettingsActivity</string>
 
     <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
+    <string name="messages_header">Cuenta</string>
     <string name="sync_header">Sync</string>
 
     <!-- Messages Preferences -->
