@@ -27,13 +27,13 @@
             android:layout_height="100dp"
             android:background="@color/white"
             android:scaleType="centerCrop"
-            android:src="@drawable/enrique_seco_orriols"
+            android:src="@drawable/img_enrique_seco_orriols"
             tools:ignore="ContentDescription" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="32dp"
@@ -43,13 +43,13 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
     <TextView
-        android:layout_width="0dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:text="@string/alusurname"
@@ -58,7 +58,7 @@
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toEndOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         app:layout_constraintVertical_bias="0" />
@@ -214,8 +214,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:src="@drawable/code_bar"
         android:layout_marginStart="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -241,7 +241,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/aluNum"
+        android:text="@string/code_bar_num"
         android:layout_marginStart="32dp"
         app:layout_constraintHorizontal_bias="0"
         app:layout_constraintBottom_toBottomOf="parent"

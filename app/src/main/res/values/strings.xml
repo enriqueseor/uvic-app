@@ -20,6 +20,7 @@
     <string name="group">GROUP: </string>
     <string name="groupType">Student</string>
     <string name="timer">15.06.2023 – 17:50:00</string>
+    <string name="code_bar_num">2110034356</string>
 
     <!-- Setting Activity -->
     <string name="title_activity_settings">SettingsActivity</string>
