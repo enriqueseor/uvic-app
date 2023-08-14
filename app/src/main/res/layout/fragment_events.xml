@@ -5,9 +5,13 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.EventsFragment">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvEvents"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_events"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="39dp" />
 
 </FrameLayout>
