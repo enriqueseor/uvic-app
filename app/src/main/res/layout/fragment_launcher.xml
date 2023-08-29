@@ -59,7 +59,7 @@
         app:layout_constraintVertical_bias="0.101" />
 
     <Button
-        android:id="@+id/Moodle"
+        android:id="@+id/MoodleApp"
         android:layout_width="68dp"
         android:layout_height="71dp"
         android:background="@android:color/transparent"
@@ -71,5 +71,159 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
+
+    <Button
+        android:id="@+id/UVals"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/DesTerritori"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/UVicShop"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/CampusInternacional"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392" />
+
+    <Button
+        android:id="@+id/MoodleWeb"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/Ubiqua"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/Urespon"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/biblioteca"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <Button
+        android:id="@+id/portalOcupacio"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/U360"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+    <Button
+        android:id="@+id/pasaporteCultural"
+        android:layout_width="68dp"
+        android:layout_height="71dp"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:textSize="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

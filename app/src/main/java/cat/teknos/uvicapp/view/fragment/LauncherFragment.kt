@@ -45,7 +45,7 @@ class LauncherFragment : Fragment() {
             openAppInPlayStore("com.microsoft.teams")
         }
 
-        val moodleButton: Button = view.findViewById(R.id.Moodle)
+        val moodleButton: Button = view.findViewById(R.id.MoodleApp)
         moodleButton.setOnClickListener {
             openAppInPlayStore("com.moodle.moodlemobile")
         }
