@@ -3,7 +3,7 @@
 This [Android](https://www.android.com/) application is a replica of the student app used at my university, 
 where I studied computer science.
 
-![uvic_card](https://github.com/enriqueseor/uvic-app/assets/101838134/1c34ff81-7faf-4558-85ca-62e476669f73)
+![UVIC_CARD](images/UVIC_CARD.png)
 
 ## Table of Contents
 
