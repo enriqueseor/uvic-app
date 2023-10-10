@@ -11,12 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Uvicapp"
         tools:targetApi="31">
-        <activity android:name=".view.activity.SettingsActivity"
+        <activity android:name=".activity.SettingsActivity"
             android:exported="false"
             android:screenOrientation="portrait"
             android:label="@string/title_activity_settings"
             tools:ignore="LockedOrientationActivity" />
-        <activity android:name=".view.activity.MainActivity"
+        <activity android:name=".activity.MainActivity"
             android:theme="@style/SplashTheme"
             android:exported="true"
             android:screenOrientation="portrait"

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.TimetableFragment">
+    tools:context=".fragment.TimetableFragment">
 
     <ImageView
         android:layout_width="match_parent"

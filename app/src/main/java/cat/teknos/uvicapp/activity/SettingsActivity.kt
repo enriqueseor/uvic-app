@@ -1,4 +1,4 @@
-package cat.teknos.uvicapp.view.activity
+package cat.teknos.uvicapp.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
