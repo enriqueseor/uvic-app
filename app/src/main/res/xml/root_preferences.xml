@@ -3,17 +3,38 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory
-        android:title="Cuenta"
-        android:titleTextColor="@color/vermell_uvic_500">
+        android:title="Cuenta">
 
+        <Preference
+            android:key="logout_preference"
+            android:summary="Cerrar Sesión"/>
     </PreferenceCategory>
 
     <PreferenceCategory app:title="General">
 
+        <PreferenceScreen
+            android:summary="idioma">
+
+            <ListPreference
+                android:key="radio_option_preference"
+                android:title="Lista de Opciones de Radio"
+                android:summary="Seleccione una opción de la lista"
+                android:defaultValue="Español" />
+
+        </PreferenceScreen>
+
     </PreferenceCategory>
 
     <PreferenceCategory app:title="Información">
-
+        <Preference
+            android:key="logout_preference"
+            android:summary="Términos y condiciones"/>
+        <Preference
+            android:key="logout_preference"
+            android:summary="Licencias de código abierto"/>
+        <Preference
+            android:key="logout_preference"
+            android:summary="Version 1.2.1 (31)"/>
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -23,6 +23,6 @@
     <string name="code_bar_num">2110034356</string>
 
     <!-- Setting Activity -->
-    <string name="title_activity_settings">SettingsActivity</string>
-    <string name="preferences">Preferences</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="preferences">Ajustes</string>
 </resources>
