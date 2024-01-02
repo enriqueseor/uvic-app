@@ -9,7 +9,6 @@ where I studied computer science.
 
 - [Features](#features)
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -26,16 +25,6 @@ To run UVic app on your local machine, follow these steps:
 2. Open the project in Android Studio.
 3. Choose a physical or virtual device. 
 4. Build and Run the project.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to Berry Game, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch: `git checkout -b feature/your-feature-name`.
-3. Make your changes and commit them: `git commit -am 'Add new feature'`.
-4. Push to the branch: `git push origin feature/your-feature-name`.
-5. Create a pull request.
 
 ## License
 
